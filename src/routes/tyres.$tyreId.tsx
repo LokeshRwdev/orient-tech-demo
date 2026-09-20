@@ -319,7 +319,12 @@ function ProductPage() {
                   className="accent-primary"
                 />
                 <span>
-                  <strong className="block">Ship to fitment station</strong>
+                  <span className="flex flex-wrap items-center gap-2">
+                    <strong className="block">Ship to fitment station</strong>
+                    <span className="rounded-none border border-primary/30 bg-primary/10 px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-primary">
+                      10 options available
+                    </span>
+                  </span>
                   <span className="text-xs text-muted-foreground">
                     Professional installation from $24.99 / tyre near {zipCode}
                   </span>
