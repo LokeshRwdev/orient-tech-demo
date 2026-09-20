@@ -399,7 +399,7 @@ function ProductPage() {
                       1 · Select a station
                     </p>
                     <div className="space-y-3">
-                      {stations.map((item) => (
+                      {stations.map((item, index) => (
                         <Button
                           key={item.name}
                           variant="ghost"
@@ -411,7 +411,14 @@ function ProductPage() {
                         >
                           <MapPin className="mt-1 size-5 shrink-0 text-primary" />
                           <span className="min-w-0 flex-1">
-                            <strong className="block">{item.name}</strong>
+                            <span className="flex flex-wrap items-center gap-2">
+                              <strong className="block">{item.name}</strong>
+                              {index === 0 && (
+                                <span className="rounded-none bg-primary px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-primary-foreground shadow-sm">
+                                  5% OFF
+                                </span>
+                              )}
+                            </span>
                             <span className="block text-sm font-normal text-muted-foreground">
                               {item.address} · ★ {item.rating}
                             </span>
