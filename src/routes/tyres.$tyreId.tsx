@@ -133,8 +133,8 @@ function ProductPage() {
   const [bookingOpen, setBookingOpen] = useState(false);
   const [bookingConfirmed, setBookingConfirmed] = useState(false);
   const [added, setAdded] = useState(false);
-  const [zipCode, setZipCode] = useState("10001");
-  const [zipInput, setZipInput] = useState("10001");
+  const [zipCode, setZipCode] = useState("30002");
+  const [zipInput, setZipInput] = useState("30002");
   const [zipSaved, setZipSaved] = useState(false);
   const recommendations = tyres.filter((item) => item.id !== tyre.id).slice(0, 4);
 
@@ -260,7 +260,9 @@ function ProductPage() {
               <p className="font-display text-xl font-bold uppercase">Choose delivery</p>
               <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 <MapPin className="size-3.5 text-primary" />
-                <span>ZIP: <strong className="text-foreground">{zipCode}</strong></span>
+                <span>
+                  ZIP: <strong className="text-foreground">{zipCode}</strong>
+                </span>
               </div>
             </div>
 
