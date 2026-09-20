@@ -358,7 +358,12 @@ function ProductPage() {
                   className="accent-primary"
                 />
                 <span>
-                  <strong className="block">Doorstep tire replacement service</strong>
+                  <span className="flex flex-wrap items-center gap-2">
+                    <strong className="block">Doorstep tire replacement service</strong>
+                    <span className="rounded-none bg-primary px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-primary-foreground shadow-sm">
+                      10% OFF
+                    </span>
+                  </span>
                   <span className="text-xs text-muted-foreground">
                     Tires fitted right at your location in {zipCode}
                   </span>
